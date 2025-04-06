@@ -1,20 +1,19 @@
  #include <iostream>
+#include <string>
 using namespace std;
+int main() {
+    string name;
+    int age;
+    int birth_year;
+    int will_be;
 
-int main () {
- 
-string name;
-int year ;
-int birth_year;
-cin>>name;
-cout<<"name - "<<name<<endl;
-cin>>year;
-cin>>birth_year;
-cout<<"age - "<<year<<endl;
-cout<<"birth_year - "<<birth_year<<endl;
-int cuando= birth_year+year;
-cout<<name<<" cumplira "<<year<<" años en "<<cuando<<endl;
+    cin>>name;
+    cin>>age;
+    cin>>birth_year;
+    will_be = birth_year + age;
+    printf("%s cumplirá %d años en %d.\n", name.c_str(), age, will_be);
 
+   
 
-  return 0;
+    return 0;
 }
